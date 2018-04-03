@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+    <form method="POST" class="post-form"  enctype="multipart/form-data">{% csrf_token %}
+    <input type="range" name="example" min="0" max="50" value="0" class="example">
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+    {{pk}}
+</body>
+</html>

@@ -1,0 +1,7 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<a href="{% url 'app:good' pk=pk %}">惹かれる理由を共感する</a>
+<a href="{% url 'app:bad' pk=pk %}">惹かれない理由を共感する</a>
+<a href="{% url 'app:ask' pk=key %}">continue</a>
+{{con}}
+{% endblock %}

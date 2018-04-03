@@ -1,0 +1,6 @@
+{% extends 'app/base.html' %}
+{% block content %}
+    {% for bad in bad %}
+    {{bad.text}}
+    {% endfor %}
+{% endblock %}
